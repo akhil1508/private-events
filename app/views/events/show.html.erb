@@ -1,0 +1,13 @@
+
+Previous:<%@user.prev_events.each do |e|%>
+<% e.attendees.each do |a| %>
+<%= a.name%> <%= a.email %>
+<%end %>
+<%end%>
+
+Upcoming:<%@user.upcoming_events.each do |e|%>
+<% e.attendees.each do |a| %>
+<%= a.name%> <%= a.email %>
+<%end %>
+<%end%>
+<%= @user.name %>

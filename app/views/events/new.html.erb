@@ -1,0 +1,11 @@
+<%= form_for @event do |f| %>
+<%= f.label :name%>
+<%= f.text_field :name, class: 'form-control'%>
+<%= f.label :description%>
+<%= f.text_field :description, class: 'form-control'%>
+<%= f.label :location%>
+<%= f.text_field :location, class: 'form-control'%>
+<%= f.label :time%>
+<%= f.text_field :time, class: 'form-control'%>
+<%= f.submit :submit %>
+<% end %>
